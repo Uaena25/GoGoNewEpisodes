@@ -2,9 +2,9 @@ from pathlib import Path
 
 
 def add_anime():
-    add = input("Add anime to watch list (enter 'y' or 'n')?: ")
+    add = input("Add anime to watch list (enter 'y' or 'n')? ")
     while add != "y" and add != "n":
-        add = input("Add anime to watch list (enter 'y' or 'n')?: ")
+        add = input("Add anime to watch list (enter 'y' or 'n')? ")
     if add == "y":
         while True:
             anime = input("Enter name of anime to add (or enter 'q' to quit): ")
@@ -17,9 +17,9 @@ def add_anime():
 
 
 def remove_anime():
-    remove = input("Remove anime from watch list (enter 'y' or 'n')?: ")
+    remove = input("Remove anime from watch list (enter 'y' or 'n')? ")
     while remove != "y" and remove != "n":
-        remove = input("Remove anime from watch list (enter 'y' or 'n')?: ")
+        remove = input("Remove anime from watch list (enter 'y' or 'n')? ")
     if remove == "y":
         with open("Anime List.txt", "r") as file_read:
             file_list = file_read.readlines()

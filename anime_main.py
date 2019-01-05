@@ -4,7 +4,9 @@ from time import sleep
 
 
 if __name__ == "__main__":
+    #Creates anime list file if used the first time.
     open("Anime List.txt", "a").close()
+
     print("List of Anime:")
     with open("Anime List.txt", "r") as file_read:
         for file in file_read:
@@ -15,5 +17,5 @@ if __name__ == "__main__":
 
     anime_open.search_anime()
     while True:
-        sleep(3600)
+        sleep(600)
         anime_open.search_anime()
